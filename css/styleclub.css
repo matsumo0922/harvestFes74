@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #151515 url('../images/IMG_0468.JPG') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button-showy {
+  background-color: #D29E04;
+}
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 20px 30px 80px;
+  background:rgba(105,105,105,0.3);
+}
+.site-title-sub {
+  margin: 50px 0 30px;
+  letter-spacing: 1px;
+  font-size: 4.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.site-title-subsub {
+  margin: 0px 0 300px;
+  letter-spacing: 1px;
+  font-size: 3.2rem;
+}
+.site-title {
+  margin: 20px 50px 40px;
+  font-size: 6.6rem;
+}
+.workpen {
+  width: 39px;
+  margin: 0 0 -3px;
+}
+
+
+
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+
+
+
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+  background:rgba(105,105,105,0.8);
+}
+
+
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    background-image: url('../images/clubhome.jpg') no-repeat fixed left bottom;
+    background-size: cover;
+    color: #fff;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
+
+  /* --- works --- */
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+
+ 
+
+  /* --- contact --- */
+  .contact {
+    padding-bottom: 100px;
+    
+  }
+
+
