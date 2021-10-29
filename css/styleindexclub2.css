@@ -4,17 +4,29 @@
  * -------------------------------- */
     
     html {
-        font-size: 62.5%;
+        font-size: 45.5%;
+    }
+    
+   body:before{
+        content:"";
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:100vh;
+        background:url('../images/IMG_0435.JPG') center no-repeat;
+        background-size:cover;
     }
     
     body {
-        background: #151515 url('../images/IMG_0435.JPG') no-repeat fixed left bottom;
-        background-size: cover;
         color: #fff;
         text-align: center;
         font-size: 1.4rem;
         font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     }
+    
     
     *,
     *::before,
@@ -281,7 +293,7 @@
     
     @media (max-width: 1024px) {
         body {
-            background-image: url('../images/bunnkahome.jpg') no-repeat fixed left bottom;
+            background-image: url('../images/bunnkahome.jpg') no-repeat fixed center bottom;
             background-size: cover;
             color: #fff;
         }
